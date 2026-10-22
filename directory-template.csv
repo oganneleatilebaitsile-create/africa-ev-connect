@@ -1,1 +1,3 @@
-
+﻿business_name,category,country,city_or_area,description,phone_public,website_url,status,checked_by,checked_date_YYYY-MM-DD,permission_to_publish,notes
+Example only - replace me,Charging,Botswana,Gaborone,Example placeholder; do not publish until replaced and checked,,,Unverified,,,No,"Confirm access, connector type, opening hours and fees"
+Example only - replace me,Vehicle sales,Botswana,Gaborone,Example placeholder; do not publish until replaced and checked,,,Unverified,,,No,Confirm business identity and permission to list
