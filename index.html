@@ -1,1 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Africa EV Connect — an independent electric mobility business directory and opportunity hub for Africa.">
+<meta name="theme-color" content="#063b36">
+<title>Africa EV Connect | Electric Mobility • Business • Opportunities</title>
+<style>
+:root{--green:#087f5b;--dark:#063b36;--blue:#0b5cab;--mint:#e7f7ef;--pale:#f3f8fb;--ink:#172b3a;--muted:#5d6c78;--line:#dce6eb;--amber:#fff2cc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+a{color:var(--blue)}.wrap{width:min(1120px,92%);margin:auto}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 0;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--dark);font-weight:800;font-size:1.15rem}
+.logo{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:var(--dark);color:#fff;font-size:1.35rem}
+.brand small{display:block;font-size:.68rem;font-weight:600;color:var(--muted)}
+nav{display:flex;gap:15px;flex-wrap:wrap;align-items:center}nav a{text-decoration:none;font-size:.9rem;font-weight:700;color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;background:var(--green);color:#fff!important;text-decoration:none;border:0;border-radius:9px;padding:11px 15px;font-weight:700;cursor:pointer}
+.btn.secondary{background:#fff;color:var(--dark)!important;border:1px solid var(--line)}.btn.small{padding:8px 11px;font-size:.88rem}
+.hero{background:linear-gradient(115deg,#063b36,#0b5cab);color:white;padding:48px 0 42px}
+.hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:25px;align-items:center}
+.kicker{font-size:.8rem;text-transform:uppercase;letter-spacing:.13em;font-weight:800;color:#b6f2d5}
+h1{font-size:clamp(2rem,5vw,3.35rem);line-height:1.08;margin:12px 0}
+.hero p{font-size:1.08rem;max-width:660px;color:#eaf7f5}
+.hero-panel{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:18px;padding:20px}
+.hero-panel strong{font-size:1.08rem}.hero-panel li{margin:8px 0}
+.notice{background:var(--amber);border-bottom:1px solid #f0d98b;padding:10px 0;font-size:.9rem}
+section{padding:34px 0;scroll-margin-top:90px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+h2{font-size:1.65rem;color:var(--dark);margin:0 0 5px}.sub{margin:0;color:var(--muted)}
+.searchbar{display:grid;grid-template-columns:1fr minmax(150px,220px) auto;gap:9px;margin:20px 0 10px}
+input,select,textarea{font:inherit;padding:12px;border:1px solid #cbd8df;border-radius:9px;width:100%;background:white;color:var(--ink)}
+label{font-weight:700;font-size:.9rem;display:block;margin:0 0 6px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{border:1px solid var(--line);border-radius:14px;padding:17px;background:white;box-shadow:0 4px 14px rgba(16,48,68,.04);min-width:0}
+.card h3{margin:10px 0 6px;font-size:1.1rem;color:var(--dark)}
+.card p{margin:7px 0}.meta{color:var(--muted);font-size:.88rem}
+.tag{display:inline-block;padding:4px 8px;border-radius:999px;font-size:.75rem;font-weight:800;background:#e8edf0;color:#364854}
+.tag.verified{background:#d8f5e5;color:#08663f}.tag.unverified{background:#fff0c2;color:#805500}.tag.info{background:#dcecff;color:#064b89}.tag.pending{background:#eee5ff;color:#57319a}
+.card-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px;flex-wrap:wrap}
+.iconbox{font-size:1.5rem;background:var(--pale);border-radius:10px;width:46px;height:46px;display:grid;place-items:center}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.soft{background:var(--pale);border:1px solid var(--line);border-radius:16px;padding:22px}
+form{display:grid;gap:13px}textarea{min-height:110px;resize:vertical}.help{font-size:.83rem;color:var(--muted)}
+.status-key{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 18px}
+footer{background:#042f35;color:#eaf7f5;padding:25px 0;margin-top:12px}footer a{color:#b6f2d5}
+.empty{padding:20px;border:1px dashed var(--line);border-radius:12px;color:var(--muted);grid-column:1/-1}
+hr{border:0;border-top:1px solid var(--line);margin:18px 0}
+@media(max-width:760px){.hero-grid,.two{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.searchbar{grid-template-columns:1fr}.nav{align-items:flex-start}nav{gap:10px}.hero{padding:34px 0}.hero-panel{padding:16px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home"><span class="logo">⚡</span><span>Africa EV Connect<small>Electric Mobility • Business • Opportunities</small></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#directory">Directory</a><a href="#opportunities">Opportunities</a><a href="#suppliers">Suppliers</a><a href="#about">About</a>
+    </nav>
+    <a class="btn small" id="headerWhatsApp" href="#contact">Contact us</a>
+  </div>
+</header>
+<div class="notice"><div class="wrap"><strong>Independent project:</strong> Africa EV Connect is not a government agency and does not claim government or manufacturer endorsement. Check listing status and opportunity details before acting.</div></div>
+<main id="home">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="kicker">Electric mobility • African business</div>
+        <h1>Connecting Africa’s electric mobility future.</h1>
+        <p>Explore business services, discover emerging opportunities and connect with suppliers as the electric mobility ecosystem develops across Botswana and Southern Africa.</p>
+        <a class="btn" href="#directory">Explore directory ↓</a>
+        <a class="btn secondary" href="#suppliers" style="margin-left:6px">Submit an enquiry</a>
+      </div>
+      <div class="hero-panel">
+        <strong>Start with trusted information</strong>
+        <ul>
+          <li>Business listings with visible verification status</li>
+          <li>Opportunity notices with source links and dates</li>
+          <li>Supplier and partnership enquiries</li>
+          <li>Mobile-friendly access — no app download required</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
+  <section id="directory">
+    <div class="wrap">
+      <div class="section-head">
+        <div><h2>EV business directory</h2><p class="sub">Search businesses and services. Status labels tell you what has—and has not—been checked.</p></div>
+      </div>
+      <div class="status-key"><span class="tag verified">Verified</span><span class="tag unverified">Unverified — check before use</span><span class="tag info">Sample category / placeholder</span></div>
+      <div class="searchbar">
+        <input id="search" type="search" placeholder="Search business, service or location…" aria-label="Search directory">
+        <select id="category" aria-label="Filter by category">
+          <option value="">All categories</option><option>Vehicle sales</option><option>Charging</option><option>Solar & energy</option><option>Fleet services</option><option>Maintenance</option><option>Training</option><option>Supplier</option>
+        </select>
+        <button class="btn" id="searchBtn" type="button">Search</button>
+      </div>
+      <p class="help" id="directoryCount">Directory records shown below are starter placeholders. Replace them with checked information before publication.</p>
+      <div class="grid" id="directoryCards"></div>
+    </div>
+  </section>
+
+  <section id="opportunities" style="background:#f6fafb">
+    <div class="wrap">
+      <div class="section-head"><div><h2>Opportunities & market signals</h2><p class="sub">Research leads, not promises of funding, procurement or contracts.</p></div></div>
+      <div class="grid">
+        <article class="card">
+          <div class="iconbox">🏭</div><div class="tag info">Official announcement</div>
+          <h3>Proposed Botswana e-mobility hub</h3>
+          <p class="meta">Botswana • Government news report • 12 Oct 2026</p>
+          <p>Government news reported a site identified around Serorome Valley for a planned e-mobility hub. The report is a market signal only; it does not confirm that procurement is open or that Africa EV Connect has any role.</p>
+          <div class="card-foot"><a href="https://dailynews.gov.bw/news-detail/93630" target="_blank" rel="noopener">Read source ↗</a><span class="tag pending">No contract confirmed</span></div>
+        </article>
+        <article class="card">
+          <div class="iconbox">🔌</div><div class="tag unverified">Research lead</div>
+          <h3>Charging-location mapping</h3>
+          <p class="meta">Botswana and regional markets</p>
+          <p>Potential directory project: contact vehicle dealers, property owners and charging providers to verify access, connectors, operating hours and payment arrangements.</p>
+          <div class="card-foot"><span class="tag unverified">Needs validation</span><a href="#suppliers">Suggest a location →</a></div>
+        </article>
+        <article class="card">
+          <div class="iconbox">🚚</div><div class="tag unverified">Customer discovery</div>
+          <h3>Fleet transition research</h3>
+          <p class="meta">Logistics • Tourism • Corporate fleets</p>
+          <p>Ask fleet operators whether they need EV cost comparisons, charging information or supplier introductions. This is a proposed service, not an advertised contract.</p>
+          <div class="card-foot"><span class="tag unverified">No buyer confirmed</span><a href="#suppliers">Discuss a pilot →</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="suppliers">
+    <div class="wrap two">
+      <div>
+        <h2>Supplier & business enquiry</h2>
+        <p class="sub">Tell us what you need or what service you provide. Submitting an enquiry does not guarantee a referral or contract.</p>
+        <div class="soft" style="margin-top:16px">
+          <h3>Who can enquire?</h3>
+          <ul><li>EV, charging and solar suppliers</li><li>Fleet operators and vehicle dealers</li><li>Property owners and tourism businesses</li><li>Training providers and technical service firms</li><li>Businesses seeking a verified directory listing</li></ul>
+        </div>
+      </div>
+      <div class="soft">
+        <form id="enquiryForm">
+          <div><label for="name">Your name *</label><input id="name" required autocomplete="name" placeholder="Full name"></div>
+          <div><label for="business">Business / organisation</label><input id="business" placeholder="Business name (if applicable)"></div>
+          <div><label for="email">Email address</label><input id="email" type="email" placeholder="you@example.com"></div>
+          <div><label for="country">Country *</label><select id="country" required><option value="">Choose country</option><option>Botswana</option><option>South Africa</option><option>Namibia</option><option>Zambia</option><option>Zimbabwe</option><option>Other African country</option><option>Outside Africa</option></select></div>
+          <div><label for="type">Enquiry type *</label><select id="type" required><option value="">Choose one</option><option>Submit a business listing</option><option>Find a supplier</option><option>Charging location information</option><option>Fleet or site research</option><option>Partnership discussion</option><option>Correct a listing</option><option>Other</option></select></div>
+          <div><label for="message">How can we help? *</label><textarea id="message" required placeholder="Describe your service, question or request. Do not include passwords or sensitive personal data."></textarea></div>
+          <label style="font-weight:400"><input type="checkbox" id="consent" required style="width:auto;margin-right:8px">I agree that the information I enter can be used to respond to this enquiry.</label>
+          <button class="btn" type="submit">Prepare WhatsApp enquiry</button>
+          <p class="help">This form does not upload or store your data on a server. It opens WhatsApp with a draft message for you to review and send. Your WhatsApp number must be configured by the site owner below.</p>
+          <p id="formStatus" role="status" class="help"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" style="background:#f6fafb">
+    <div class="wrap two">
+      <div><h2>About Africa EV Connect</h2><p>A proposed independent digital directory and information service for electric mobility businesses and opportunities across Africa, starting with Botswana. The goal is to make useful information easier to find and help businesses discover relevant service providers.</p><p><strong>Independence notice:</strong> This is a privately developed project. It is not affiliated with, authorised by or endorsed by any government, vehicle manufacturer or organisation unless a specific written agreement is later confirmed.</p></div>
+      <div class="soft" id="contact"><h2>Contact</h2><p>For directory corrections, supplier enquiries and business discussions:</p><p><strong>WhatsApp:</strong> <span id="whatsappDisplay">Not configured yet</span></p><p><strong>Email:</strong> <span id="emailDisplay">Not configured yet</span></p><p class="help">Before publishing, edit the configuration in this HTML file to add your own WhatsApp number and business email. Do not publish another person's contact details without permission.</p><a class="btn secondary" href="#suppliers">Open enquiry form</a></div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><strong>Africa EV Connect</strong><p>Electric Mobility • Business • Opportunities</p><p class="help" style="color:#d5e6e7">Independent information platform. Listing status is not a guarantee of quality, safety, availability or commercial success. Always verify directly with the provider.</p><small>© <span id="year"></span> Africa EV Connect. Working name; trademark and domain availability not checked.</small></div></footer>
+<script>
+/* SITE OWNER CONFIGURATION — replace these values before publishing.
+   WhatsApp number format: country code + number, digits only, no + or spaces.
+   Botswana example format only: 267XXXXXXXX (replace with YOUR number). */
+const SITE_CONFIG = {
+  whatsappNumber: "REPLACE_WITH_YOUR_WHATSAPP_NUMBER",
+  contactEmail: "REPLACE_WITH_YOUR_BUSINESS_EMAIL"
+};
+
+/* STARTER RECORDS ARE PLACEHOLDERS, NOT CLAIMS THAT THESE BUSINESSES EXIST.
+   Replace or remove each record after checking details with the business. */
+const businesses = [
+  {name:"Add a verified EV dealer",category:"Vehicle sales",location:"Town / Country",description:"Add the dealer's approved vehicle brands, services and contact link after confirming directly.",status:"Sample placeholder",phone:"",url:""},
+  {name:"Add a charging provider",category:"Charging",location:"Town / Country",description:"Confirm public access, connector type, opening hours, fees and last-checked date before publishing.",status:"Sample placeholder",phone:"",url:""},
+  {name:"Add a fleet services company",category:"Fleet services",location:"Town / Country",description:"Confirm the provider's actual fleet, tracking, maintenance or logistics services.",status:"Sample placeholder",phone:"",url:""},
+  {name:"Add a solar / energy company",category:"Solar & energy",location:"Town / Country",description:"Confirm services offered and whether the provider has EV-charging experience before claiming it.",status:"Sample placeholder",phone:"",url:""},
+  {name:"Add an EV maintenance provider",category:"Maintenance",location:"Town / Country",description:"Check qualifications, high-voltage safety capability and supported vehicle types directly.",status:"Sample placeholder",phone:"",url:""},
+  {name:"Add a technical training provider",category:"Training",location:"Town / Country",description:"Confirm accreditation, course content, eligibility and dates with the training provider.",status:"Sample placeholder",phone:"",url:""}
+];
+
+const cards = document.getElementById("directoryCards");
+const searchInput = document.getElementById("search");
+const categoryInput = document.getElementById("category");
+function safeUrl(url){try{const u=new URL(url);return ["https:","http:"].includes(u.protocol)?u.href:""}catch(e){return ""}}
+function renderDirectory(){
+  const q=searchInput.value.trim().toLowerCase(), cat=categoryInput.value;
+  const found=businesses.filter(b=>(!cat||b.category===cat)&&[b.name,b.category,b.location,b.description].join(" ").toLowerCase().includes(q));
+  cards.innerHTML="";
+  document.getElementById("directoryCount").textContent=`${found.length} record(s) shown. Starter entries are placeholders; replace them with information checked directly with each business.`;
+  if(!found.length){cards.innerHTML='<div class="empty">No matching listings. Try another search or category.</div>';return}
+  found.forEach(b=>{
+    const isVerified=b.status==="Verified";
+    const tagClass=isVerified?"verified":"unverified";
+    const badge=isVerified?"Verified":(b.status==="Sample placeholder"?"Sample placeholder — not a real listing":"Unverified — check before use");
+    const link=safeUrl(b.url);
+    const article=document.createElement("article");article.className="card";
+    const icon=document.createElement("div");icon.className="iconbox";icon.textContent="⚡";article.appendChild(icon);
+    const tag=document.createElement("span");tag.className="tag "+tagClass;tag.textContent=badge;article.appendChild(tag);
+    const h=document.createElement("h3");h.textContent=b.name;article.appendChild(h);
+    const meta=document.createElement("p");meta.className="meta";meta.textContent=b.category+" • "+b.location;article.appendChild(meta);
+    const desc=document.createElement("p");desc.textContent=b.description;article.appendChild(desc);
+    const foot=document.createElement("div");foot.className="card-foot";
+    const status=document.createElement("span");status.className="help";status.textContent=b.checkedDate?"Last checked: "+b.checkedDate:"No verification date";foot.appendChild(status);
+    if(link){const a=document.createElement("a");a.href=link;a.target="_blank";a.rel="noopener";a.textContent="Website ↗";foot.appendChild(a)}
+    article.appendChild(foot);cards.appendChild(article);
+  });
+}
+document.getElementById("searchBtn").addEventListener("click",renderDirectory);
+searchInput.addEventListener("input",renderDirectory);categoryInput.addEventListener("change",renderDirectory);
+function configuredWhatsApp(){return /^\d{8,15}$/.test(SITE_CONFIG.whatsappNumber)?SITE_CONFIG.whatsappNumber:""}
+const wa=configuredWhatsApp();
+if(wa){document.getElementById("headerWhatsApp").href="https://wa.me/"+wa;document.getElementById("whatsappDisplay").textContent="+"+wa}
+if(SITE_CONFIG.contactEmail.includes("@")&&!SITE_CONFIG.contactEmail.includes("REPLACE_"))document.getElementById("emailDisplay").textContent=SITE_CONFIG.contactEmail;
+document.getElementById("enquiryForm").addEventListener("submit",function(e){
+  e.preventDefault();
+  if(!wa){document.getElementById("formStatus").textContent="Site owner setup needed: edit SITE_CONFIG.whatsappNumber in index.html, save and publish again.";return}
+  if(!document.getElementById("consent").checked)return;
+  const fields=[
+    "Africa EV Connect enquiry",
+    "Name: "+document.getElementById("name").value.trim(),
+    "Business: "+(document.getElementById("business").value.trim()||"Not provided"),
+    "Email: "+(document.getElementById("email").value.trim()||"Not provided"),
+    "Country: "+document.getElementById("country").value,
+    "Enquiry type: "+document.getElementById("type").value,
+    "Message: "+document.getElementById("message").value.trim()
+  ];
+  document.getElementById("formStatus").textContent="Opening WhatsApp. Review the draft and press Send there.";
+  window.open("https://wa.me/"+wa+"?text="+encodeURIComponent(fields.join("\n")),"_blank","noopener");
+});
+document.getElementById("year").textContent=new Date().getFullYear();
+renderDirectory();
+</script>
+</body>
+</html>
